@@ -2,8 +2,7 @@
 terraform {
   required_providers {
     oci = {
-      source  = "oracle/oci"
-      version = "~> 6.0"
+      source = "oracle/oci"
     }
   }
   backend "oci" {
@@ -13,7 +12,6 @@ terraform {
     auth      = "OKEWorkloadIdentity"
   }
 }
-
 
 
 
