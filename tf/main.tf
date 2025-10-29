@@ -22,7 +22,7 @@ data "oci_identity_compartment" "test_compartment" {
 }
 
 provider "oci" {
-  auth   = "oke_workload_identity"
+  auth   = "OKEWorkloadIdentity"
   region = var.region
 }
 
