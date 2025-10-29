@@ -9,7 +9,7 @@ terraform {
     bucket    = "wi_terraform"
     namespace = "idjuatm1d4mr"
     region    = "eu-frankfurt-1"
-    auth      = "OKEWorkloadIdentity"
+    auth      = "AuthOKEWorkloadIdentity"
   }
 }
 
