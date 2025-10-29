@@ -10,7 +10,7 @@ terraform {
     namespace = "idjuatm1d4mr"
     region    = "eu-frankfurt-1"
     key       = "terraform.tfstate"
-    auth      = "OKEWorkloadIdentity"
+    #auth      = "OKEWorkloadIdentity"
   }
 }
 
