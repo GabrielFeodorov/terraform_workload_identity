@@ -14,13 +14,16 @@ terraform {
 
 variable "compartment_id" {}
 
+variable "region" {}
+
 data "oci_identity_compartment" "test_compartment" {
   #Required
   id = var.compartment_id
 }
 
 provider "oci" {
-  auth = "oke_workload_identity"
+  auth   = "oke_workload_identity"
+  region = var.region
 }
 
 output "tenancy" {
